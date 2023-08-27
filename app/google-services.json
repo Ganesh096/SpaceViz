@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1000521132818",
+    "firebase_url": "https://kpmg-enterprises-default-rtdb.firebaseio.com",
+    "project_id": "kpmg-enterprises",
+    "storage_bucket": "kpmg-enterprises.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000521132818:android:9559fae9702be0d008e1cb",
+        "android_client_info": {
+          "package_name": "com.example.kpmg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000521132818-1dn2rkgqkb32gfbrsba8f02npf240lbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrGNMERUlB3bI41dham-0sv93VXqhdHSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000521132818-1dn2rkgqkb32gfbrsba8f02npf240lbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

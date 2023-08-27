@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kpmg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name="com.example.kpmg.Summary"/>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity android:name="com.example.kpmg.Add_products" />
+        <activity android:name="com.example.kpmg.WishlistDetails" />
+        <activity android:name="com.example.kpmg.DetailsPage" />
+        <activity android:name="com.example.kpmg.SuccessPay" />
+        <activity android:name="com.example.kpmg.Payment" />
+        <activity android:name="com.example.kpmg.Admin_orderReport" />
+        <activity android:name="com.example.kpmg.Admin_userReport" />
+        <activity android:name="com.example.kpmg.admin_login" />
+        <activity android:name="com.example.kpmg.camera" />
+        <activity android:name="com.example.kpmg.cart" />
+        <activity android:name="com.example.kpmg.EditProfile" />
+        <activity android:name="com.example.kpmg.gallery" />
+        <activity android:name="com.example.kpmg.Login" />
+        <activity android:name="com.example.kpmg.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.kpmg.MainActivity" />
+        <activity android:name="com.example.kpmg.profile" />
+        <activity android:name="com.example.kpmg.Signup" />
+        <activity android:name="com.example.kpmg.wishlist" />
+    </application>
+
+</manifest>
