@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@drawable/background"
     tools:context=".WishlistDetails">
 
     <ImageView
@@ -193,7 +193,7 @@
                 android:layout_marginTop="29dp"
                 android:layout_marginEnd="70dp"
                 android:layout_marginRight="70dp"
-                android:background="@drawable/button_bg"
+                android:background="#D014D6"
                 android:drawableTop="@drawable/ic_baseline_360"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/WDnamefill"
@@ -216,7 +216,7 @@
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:backgroundTint="#555555"
+                app:backgroundTint="#D014D6"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

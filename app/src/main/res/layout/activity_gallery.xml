@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@drawable/background"
     tools:context=".gallery">
 
 
@@ -14,9 +14,9 @@
         android:layout_height="38dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="7dp"
-        android:text="Furniture Store"
+        android:text="KPMG ENTERPRISES"
         android:textColor="@color/black"
-        android:textSize="27dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Gsearch"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,8 +71,8 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView3"
-                android:layout_width="352dp"
-                android:layout_height="566dp"
+                android:layout_width="340dp"
+                android:layout_height="540dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="14dp"

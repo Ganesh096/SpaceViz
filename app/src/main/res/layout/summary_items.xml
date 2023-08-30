@@ -30,8 +30,8 @@
 
             <ImageView
                 android:id="@+id/SCimage"
-                android:layout_width="162dp"
-                android:layout_height="123dp"
+                android:layout_width="140dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="192dp"
                 android:layout_marginRight="192dp"

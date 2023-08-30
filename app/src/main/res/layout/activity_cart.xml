@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@drawable/background"
     tools:context=".cart">
 
     <TextView
@@ -24,7 +24,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="370dp"
+        android:layout_width="360dp"
         android:layout_height="464dp"
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
@@ -92,7 +92,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="#555555"
+        app:backgroundTint="#D014D6"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
