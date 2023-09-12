@@ -1,0 +1,38 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.3 x64 6.3.3.8069
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Gold_Metal
+Ka 0.921569 0.921569 0.403922
+Kd 0.929412 0.737255 0.32549
+Ks 1 1 1
+illum 2
+Ns 256
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Material__33
+Ka 1 1 1
+Kd 0.815686 0.815686 0.815686
+Ks 1 1 1
+illum 2
+Ns 128
+map_Kd merble_007.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA merble_007.png
+map_Ns 

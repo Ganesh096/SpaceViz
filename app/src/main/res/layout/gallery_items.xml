@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/item1"
-        android:layout_width="325dp"
+        android:layout_width="320dp"
         android:layout_height="150dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
@@ -15,7 +15,8 @@
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="13dp"
-        app:cardBackgroundColor="@color/grey"
+        app:cardBackgroundColor="@color/teal_200"
+        app:cardMaxElevation="111dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,11 +26,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <ImageView
                 android:id="@+id/Gimage"
-                android:layout_width="140dp"
+                android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="192dp"
@@ -79,13 +81,13 @@
 
             <TextView
                 android:id="@+id/Gtype"
-                android:layout_width="70dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
                 android:layout_marginLeft="3dp"
                 android:layout_marginTop="19dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginBottom="15dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="Chair"
@@ -100,11 +102,9 @@
                 android:id="@+id/typeg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="19dp"
                 android:layout_marginEnd="3dp"
-                android:layout_marginRight="3dp"
                 android:layout_marginBottom="15dp"
                 android:text="Category:"
                 android:textColor="@color/black"
@@ -118,8 +118,8 @@
                 android:id="@+id/Gprice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="19dp"
                 android:layout_marginEnd="3dp"
                 android:layout_marginRight="3dp"

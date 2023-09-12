@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="1000dp"
-    android:background="@drawable/splash"
+    android:background="@color/white"
     android:id="@+id/splashScreen"
     tools:context=".splash">
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="140dp"
+        android:layout_width="180dp"
         android:layout_height="135dp"
         android:layout_marginStart="126dp"
         android:layout_marginLeft="126dp"
-        android:layout_marginTop="234dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="127dp"
         android:layout_marginRight="127dp"
         android:layout_marginBottom="39dp"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/splash"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,10 +35,22 @@
         android:layout_marginRight="65dp"
         android:fontFamily="@font/roboto_bold"
         android:text="KPMG ENTERPRISES"
-        android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textColor="#D014D6"
+        android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="Developed By Mrunal Kedar Ganesh"
+        android:textColor="#474647"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

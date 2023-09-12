@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background">
+   >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/item1"
-        android:layout_width="231dp"
+        android:layout_width="331dp"
         android:layout_height="200dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
@@ -31,17 +31,16 @@
 
             <ImageView
                 android:id="@+id/Wimage"
-                android:layout_width="214dp"
-                android:layout_height="157dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_marginStart="2dp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="17dp"
                 android:layout_marginEnd="2dp"
-                android:layout_marginRight="2dp"
                 android:layout_marginBottom="9dp"
                 android:src="@drawable/baseline_image"
                 app:layout_constraintBottom_toTopOf="@+id/Wdelete"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,0 +1,70 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.3 x64 6.3.3.8069
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Fabric_Bed
+Ka 0.611765 0.611765 0.360784
+Kd 0.5882 0.5569 0.5176
+Ks 1 1 1
+illum 2
+Ns 32
+map_Kd 02_08-.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fabric_Flowers
+Ka 0.905882 0.905882 0.905882
+Kd 0.815686 0.815686 0.815686
+Ks 1 1 1
+illum 2
+Ns 16
+map_Kd azzx7661.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fabric_Brown
+Ka 0.258824 0.227451 0.203922
+Kd 0.258824 0.227451 0.203922
+Ks 1 1 1
+illum 2
+Ns 22.6274
+map_Kd txxtW234.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fabric_Grey
+Ka 0.545098 0.545098 0.545098
+Kd 0.45098 0.45098 0.45098
+Ks 1 1 1
+illum 2
+Ns 11.3137
+map_Kd 02_08+++.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

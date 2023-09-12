@@ -97,24 +97,30 @@ public class MainActivity extends AppCompatActivity {
 
     private void getImages() {
 
-        imagesPath.add(R.drawable.table);
+        imagesPath.add(R.drawable.kptable);
         imagesPath.add(R.drawable.bookshelf);
         imagesPath.add(R.drawable.lamp);
         imagesPath.add(R.drawable.odltv);
-        imagesPath.add(R.drawable.clothdryer);
+        imagesPath.add(R.drawable.plant);
         imagesPath.add(R.drawable.chair);
+        imagesPath.add(R.drawable.bed);
+        imagesPath.add(R.drawable.mirror);
         namesPath.add("Table");
         namesPath.add("BookShelf");
         namesPath.add("Lamp");
         namesPath.add("Old Tv");
-        namesPath.add("Cloth Dryer");
+        namesPath.add("Plant");
         namesPath.add("Chair");
-        modelNames.add("table.sfb");
+        namesPath.add("Bed");
+        namesPath.add("Mirror");
+        modelNames.add("KPTable.sfb");
         modelNames.add("model.sfb");
         modelNames.add("lamp.sfb");
         modelNames.add("tv.sfb");
-        modelNames.add("cloth.sfb");
+        modelNames.add("plant.sfb");
         modelNames.add("chair.sfb");
+        modelNames.add("Bed.sfb");
+        modelNames.add("Mirror.sfb");
 
         initaiteRecyclerview();
     }

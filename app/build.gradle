@@ -58,6 +58,7 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.braintreepayments:card-form:5.1.1'
+    implementation 'com.razorpay:checkout:1.6.33'
 }
 
 sceneform.asset('sampleData/model.obj',
@@ -94,6 +95,25 @@ sceneform.asset('sampleData/room.obj',
         'default',
         'sampleData/room.sfa',
         'src/main/assets/room')
-
+sceneform.asset('sampleData/CHIARO.obj',
+        'default',
+        'sampleData/CHIARO.sfa',
+        'src/main/assets/ch')
+sceneform.asset('sampleData/KPTable.obj',
+        'default',
+        'sampleData/KPTable.sfa',
+        'src/main/assets/KPTable')
+sceneform.asset('sampleData/Bed.obj',
+        'default',
+        'sampleData/Bed.sfa',
+        'src/main/assets/Bed')
+sceneform.asset('sampleData/Mirror.obj',
+        'default',
+        'sampleData/Mirror.sfa',
+        'src/main/assets/Mirror')
+sceneform.asset('sampleData/Plant.obj',
+        'default',
+        'sampleData/Plant.sfa',
+        'src/main/assets/Plant')
 
 

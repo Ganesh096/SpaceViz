@@ -1,7 +1,9 @@
 package com.example.kpmg;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -9,18 +11,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.razorpay.Checkout;
+import com.razorpay.PaymentData;
+import com.razorpay.PaymentResultWithDataListener;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.UUID;
 
-public class DetailsPage extends AppCompatActivity {
+public class DetailsPage extends AppCompatActivity implements PaymentResultWithDataListener {
     ImageView back;
     ImageView Img;
     TextView name,price,type,quantity;
@@ -31,6 +39,9 @@ public class DetailsPage extends AppCompatActivity {
     private FirebaseFirestore db;
     FirebaseAuth auth;
     Products products = null;
+
+    AlertDialog.Builder alertDialogBuilder;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +67,7 @@ public class DetailsPage extends AppCompatActivity {
         wishlist = findViewById(R.id.Dwishlist);
         add = findViewById(R.id.Dplus);
         remove = findViewById(R.id.Dminus);
+        btn=findViewById(R.id.buy_now2);
 
         //new products
         if(products != null){
@@ -65,6 +77,19 @@ public class DetailsPage extends AppCompatActivity {
             type.setText(products.getType());
         }
 
+        alertDialogBuilder = new AlertDialog.Builder(DetailsPage.this);
+        alertDialogBuilder.setCancelable(false);
+        alertDialogBuilder.setTitle("Payment Result");
+        alertDialogBuilder.setPositiveButton("Ok", (dialog, which) -> {
+            //do nothing
+        });
+        btn.setOnClickListener(new View.OnClickListener() {
+                                   @Override
+                                   public void onClick(View v) {
+                                       // startActivity(new Intent(getApplicationContext(),Payment.class));
+                                       makepayment();
+                                   }
+                               });
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,6 +142,55 @@ public class DetailsPage extends AppCompatActivity {
         });
     }
 
+    private void makepayment() {
+       // String t= String.valueOf(totalBil*100);
+        String price2 = String.valueOf(Double.parseDouble(price.getText().toString())*100);
+
+
+        Checkout checkout = new Checkout();
+        checkout.setKeyID("rzp_test_VcujuvQDS9xUdR");
+        /**
+         * Instantiate Checkout
+         */
+
+
+        /**
+         * Set your logo here
+         */
+        checkout.setImage(R.drawable.logo);
+
+        /**
+         * Reference to current activity
+         */
+        final Activity activity = this;
+
+        /**
+         * Pass your payment options to the Razorpay Checkout as a JSONObject
+         */
+        try {
+            JSONObject options = new JSONObject();
+
+            options.put("name", "KPMG ENTERPRISES");
+            options.put("description", "Reference No. #123456");
+            options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg");
+            //  options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
+            options.put("theme.color", "#D014D6");
+            options.put("currency", "INR");
+            options.put("amount", price2);//pass amount in currency subunits
+            options.put("prefill.email", "kedarpandit2000@gmail.com");
+            options.put("prefill.contact","9021835588");
+            JSONObject retryObj = new JSONObject();
+            retryObj.put("enabled", true);
+            retryObj.put("max_count", 4);
+            options.put("retry", retryObj);
+
+            checkout.open(activity, options);
+
+        } catch(Exception e) {
+            Log.e("TAG", "Error in starting Razorpay Checkout", e);
+        }
+    }
+
     private void addtoWishlist() {
         String price2 = price.getText().toString();
         String id = UUID.randomUUID().toString();
@@ -163,4 +237,24 @@ public class DetailsPage extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onPaymentSuccess(String s, PaymentData paymentData) {
+        try{
+            alertDialogBuilder.setMessage("Payment Successful :\nPayment ID: "+s+"\nPayment Data: "+paymentData.getData());
+            alertDialogBuilder.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onPaymentError(int i, String s, PaymentData paymentData) {
+
+        try{
+            alertDialogBuilder.setMessage("Payment Failed:\nPayment Data: "+paymentData.getData());
+            alertDialogBuilder.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

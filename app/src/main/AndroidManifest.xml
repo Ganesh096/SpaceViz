@@ -38,7 +38,9 @@
         <activity android:name="com.example.kpmg.EditProfile" />
         <activity android:name="com.example.kpmg.gallery" />
         <activity android:name="com.example.kpmg.Login" />
-        <activity android:name="com.example.kpmg.splash">
+        <activity android:name="com.example.kpmg.splash"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
