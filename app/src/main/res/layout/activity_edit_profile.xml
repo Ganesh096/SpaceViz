@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#7C44DF"
     tools:context=".EditProfile">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="251dp"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:text="Edit Profile"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

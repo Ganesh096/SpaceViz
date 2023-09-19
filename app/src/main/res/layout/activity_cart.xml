@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#7C44DF"
     tools:context=".cart">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="251dp"
         android:layout_height="70dp"
         android:text="Shopping Cart"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +62,7 @@
         android:layout_marginRight="121dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Your Cart is Empty"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"

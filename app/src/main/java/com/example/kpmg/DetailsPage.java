@@ -173,7 +173,7 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
             options.put("name", "KPMG ENTERPRISES");
             options.put("description", "Reference No. #123456");
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg");
-            //  options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
+           // options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
             options.put("theme.color", "#D014D6");
             options.put("currency", "INR");
             options.put("amount", price2);//pass amount in currency subunits
