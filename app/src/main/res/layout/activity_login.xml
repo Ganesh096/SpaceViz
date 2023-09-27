@@ -8,12 +8,23 @@
     tools:context=".Login">
 
 
-
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/card1"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="120dp"
         android:id="@+id/img1"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_height="120dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,6 +42,7 @@
         android:text="Login"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:layout_marginTop="20dp"
         android:textStyle="bold"
         app:backgroundTint="#D014D6"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
@@ -85,7 +97,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"
@@ -132,9 +144,9 @@
         android:fontFamily="@font/roboto_bold"
         android:text="Log In"
         android:textColor="@color/white"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:textSize="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/img1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,28 +164,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.607" />
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewAdmin"
-        android:src="@drawable/logo3"
-        android:id="@+id/logo"
-        ></ImageView>
+
 
     <TextView
         android:id="@+id/textViewAdmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="115dp"
         android:layout_marginRight="115dp"
-        android:layout_marginBottom="57dp"
+        android:layout_marginBottom="3dp"
         android:text=" Login as admin!"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -186,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
         android:layout_marginLeft="122dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:layout_marginBottom="57dp"
@@ -197,6 +200,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/logo3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3">
+            </ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
