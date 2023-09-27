@@ -3,11 +3,24 @@ package com.example.kpmg;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Timer;
+
 public class splash extends AppCompatActivity {
     Handler handler;
+    Animation topAnim;
+    Animation bottomAnim;
+    Animation textAnim;
+    ImageView image1;
+    TextView image2;
+    TextView textView;
+    Timer timer;
     //View splash;
 
     @Override
@@ -34,7 +47,17 @@ public class splash extends AppCompatActivity {
                 finish();
             }
 
-        },1500);
+        },2500);
+
+        topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
+        bottomAnim=AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
+        textAnim=AnimationUtils.loadAnimation(this,R.anim.text);
+        image2=findViewById(R.id.textView6);
+        image2.setAnimation(bottomAnim);
+        image1=findViewById(R.id.imageView7);
+        image1.setAnimation(topAnim);
+        textView=findViewById(R.id.textView20);
+        textView.setAnimation(textAnim);
 
 
     }
