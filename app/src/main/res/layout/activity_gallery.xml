@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7C44DF"
+    android:background="@color/white"
     tools:context=".gallery">
 
 
@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:text="KPMG ENTERPRISES"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Gsearch"
@@ -53,7 +53,7 @@
         android:layout_marginStart="11dp"
         android:layout_marginEnd="11dp"
         android:layout_marginBottom="100dp"
-        app:cardBackgroundColor="#7C44DF"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

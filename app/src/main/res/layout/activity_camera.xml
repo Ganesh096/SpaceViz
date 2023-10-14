@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7C44DF"
+    android:background="@color/white"
     tools:context=".camera">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="251dp"
         android:layout_height="70dp"
         android:text="AR Camera"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

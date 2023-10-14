@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7C44DF"
+    android:background="@color/white"
     tools:context=".Login">
 
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_bg"
         android:text="Login"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
@@ -110,7 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New User?"
-            android:textColor="@color/white"
+            android:textColor="@color/purple_700"
             android:id="@+id/txt"/>
 
         <TextView
@@ -118,7 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Create an account"
-            android:textColor="@color/white" />
+            android:textColor="@color/purple_700" />
 
     </LinearLayout>
 
@@ -129,7 +129,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
         android:text="Forgot Password?"
-        android:textColor="@color/white"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toTopOf="@id/btnlogin"
         app:layout_constraintEnd_toEndOf="@+id/pass"
         app:layout_constraintHorizontal_bias="1"
@@ -143,7 +143,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold"
         android:text="Log In"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="5dp"
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@id/img1"
@@ -175,7 +175,7 @@
         android:layout_marginRight="115dp"
         android:layout_marginBottom="3dp"
         android:text=" Login as admin!"
-        android:textColor="@color/white"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toTopOf="@id/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.583"
@@ -194,7 +194,7 @@
         android:layout_marginRight="3dp"
         android:layout_marginBottom="57dp"
         android:text="Admin?"
-        android:textColor="@color/white"
+        android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textViewAdmin"
         app:layout_constraintStart_toStartOf="parent"

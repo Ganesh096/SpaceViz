@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7C44DF"
+    android:background="@color/white"
     tools:context=".admin_login">
 
     <ScrollView
@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/card1"
-        app:cardBackgroundColor="#7C44DF"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="25dp"
         >
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -104,7 +104,7 @@
             android:layout_marginTop="60dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Admin Log In"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="25dp"
             app:layout_constraintBottom_toTopOf="@id/img1"
             app:layout_constraintEnd_toEndOf="parent"

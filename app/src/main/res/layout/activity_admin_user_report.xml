@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7C44DF"
+    android:background="@color/white"
     tools:context=".Admin_userReport">
 
 
@@ -21,7 +21,7 @@
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:text="User Report"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="27sp"
         app:layout_constraintBottom_toTopOf="@+id/Usearch"
         app:layout_constraintEnd_toEndOf="parent"
