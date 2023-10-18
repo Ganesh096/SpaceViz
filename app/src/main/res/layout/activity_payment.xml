@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Payment">
 
+
     <ImageView
         android:id="@+id/Pback"
         android:layout_width="wrap_content"
@@ -77,7 +78,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:layout_marginBottom="200dp"
-        android:background="#E33EEF"
+        android:background="#9CDFF4"
         android:gravity="center"
         android:text="Proceed to Pay"
         android:textColor="@color/black"

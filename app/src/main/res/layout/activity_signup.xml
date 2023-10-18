@@ -140,8 +140,8 @@
         android:text="Sign Up"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:backgroundTint="#D014D6"
+        android:textColor="@color/black"
+        android:backgroundTint="#9CDFF4"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -182,13 +182,13 @@
 
     </LinearLayout>
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="420dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout"
-        android:src="@drawable/logo3"
+
         android:id="@+id/logo"
         ></ImageView>
     <ProgressBar

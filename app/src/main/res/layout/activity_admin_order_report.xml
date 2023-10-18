@@ -9,14 +9,9 @@
 
     <TextView
         android:id="@+id/head"
-        android:layout_width="243dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="688dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#9CDFF4"
         android:fontFamily="@font/roboto_bold"
         android:gravity="center"
         android:text="Order Report"
@@ -31,7 +26,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="363dp"
-        android:layout_height="550dp"
+        android:layout_height="600dp"
         android:layout_marginStart="11dp"
         android:layout_marginLeft="11dp"
         android:layout_marginTop="15dp"
@@ -42,8 +37,8 @@
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/head">
-
+        app:layout_constraintTop_toBottomOf="@+id/head"
+>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -77,7 +72,7 @@
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
         android:layout_marginBottom="4dp"
-        android:background="@drawable/button_bg"
+        android:background="@color/darkgrey"
         android:elevation="2dp"
         app:itemIconSize="27dp"
         app:itemIconTint="@drawable/item_selector2"
