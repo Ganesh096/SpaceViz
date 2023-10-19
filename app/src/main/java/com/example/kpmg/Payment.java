@@ -136,11 +136,11 @@ public class Payment extends AppCompatActivity implements PaymentResultWithDataL
 
             JSONObject options = new JSONObject();
 
-            options.put("name", "KPMG ENTERPRISES");
+            options.put("name", "SPACEVIZ");
             options.put("description", "Reference No. #123456");
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg");
             //  options.put("order_id", id);//from response of step 3.
-            options.put("theme.color", "#D014D6");
+            options.put("theme.color", "#9CDFF4");
             options.put("currency", "INR");
             options.put("amount", t);//pass amount in currency subunits
             options.put("prefill.email", "kedarpandit2000@gmail.com");
