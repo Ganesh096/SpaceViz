@@ -102,10 +102,10 @@ sceneform.asset('sampleData/CHIARO.obj',
         'default',
         'sampleData/CHIARO.sfa',
         'src/main/assets/ch')
-sceneform.asset('sampleData/KPTable.obj',
+sceneform.asset('sampleData/Desk.obj',
         'default',
-        'sampleData/KPTable.sfa',
-        'src/main/assets/KPTable')
+        'sampleData/Desk.sfa',
+        'src/main/assets/Desk')
 sceneform.asset('sampleData/Bed.obj',
         'default',
         'sampleData/Bed.sfa',
@@ -114,9 +114,25 @@ sceneform.asset('sampleData/Mirror.obj',
         'default',
         'sampleData/Mirror.sfa',
         'src/main/assets/Mirror')
-sceneform.asset('sampleData/Plant.obj',
+sceneform.asset('sampleData/wall_shelf.obj',
         'default',
-        'sampleData/Plant.sfa',
-        'src/main/assets/Plant')
+        'sampleData/wall_shelf.sfa',
+        'src/main/assets/wall_shelf')
+sceneform.asset('sampleData/TV_Table.obj',
+        'default',
+        'sampleData/TV_Table.sfa',
+        'src/main/assets/TV_Table')
+sceneform.asset('sampleData/Long_Couch.obj',
+        'default',
+        'sampleData/Long_Couch.sfa',
+        'src/main/assets/Long_Couch')
+sceneform.asset('sampleData/Fluffy_Chair.obj',
+        'default',
+        'sampleData/Fluffy_Chair.sfa',
+        'src/main/assets/Fluffy_Chair')
+sceneform.asset('sampleData/garden_bench.obj',
+        'default',
+        'sampleData/garden_bench.sfa',
+        'src/main/assets/garden_bench')
 
 
