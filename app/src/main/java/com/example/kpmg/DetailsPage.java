@@ -34,6 +34,7 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
     TextView name,price,type,quantity;
     Button addtoCart, wishlist, view;
     ImageView add,remove;
+    int totalBil;
     int totalQuntity = 1;
 
     private FirebaseFirestore db;
@@ -87,7 +88,11 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
                                    @Override
                                    public void onClick(View v) {
                                        // startActivity(new Intent(getApplicationContext(),Payment.class));
-                                       makepayment();
+                                       String totalBil = String.valueOf(Double.parseDouble(price.getText().toString())*100);
+                                       //totalBil= Integer.parseInt(price.getText(products.getPrice()).toString());
+                                       Intent intent=new Intent(DetailsPage.this,Payment.class);
+                                       intent.putExtra("Bill",totalBil);
+                                       startActivity(intent);
                                    }
                                });
         view.setOnClickListener(new View.OnClickListener() {
