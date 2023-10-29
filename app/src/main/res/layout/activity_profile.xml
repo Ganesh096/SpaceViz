@@ -236,8 +236,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_margin="30dp"
         android:background="@drawable/bg"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:elevation="2dp"
         app:itemIconSize="27dp"
         app:itemIconTint="@drawable/item_selector"
@@ -246,7 +249,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
         app:menu="@menu/navigation_items" />
 
 
