@@ -1,5 +1,7 @@
 package com.example.kpmg;
 
+import static android.content.ContentValues.TAG;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,6 +36,7 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
     TextView name,price,type,quantity;
     Button addtoCart, wishlist, view;
     ImageView add,remove;
+
     int totalQuntity = 1;
 
     private FirebaseFirestore db;
@@ -86,8 +89,12 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
         btn.setOnClickListener(new View.OnClickListener() {
                                    @Override
                                    public void onClick(View v) {
-                                       // startActivity(new Intent(getApplicationContext(),Payment.class));
-                                       makepayment();
+                                       String price2 = String.valueOf(Double.parseDouble(price.getText().toString())*100);
+
+                                       Intent intent=new Intent(DetailsPage.this,PaymentActivity.class);
+                                       intent.putExtra("Bill",price2);
+                                       startActivity(intent);
+
                                    }
                                });
         view.setOnClickListener(new View.OnClickListener() {
@@ -147,6 +154,7 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
         String price2 = String.valueOf(Double.parseDouble(price.getText().toString())*100);
 
 
+
         Checkout checkout = new Checkout();
         checkout.setKeyID("rzp_test_VcujuvQDS9xUdR");
         /**
@@ -170,11 +178,11 @@ public class DetailsPage extends AppCompatActivity implements PaymentResultWithD
         try {
             JSONObject options = new JSONObject();
 
-            options.put("name", "KPMG ENTERPRISES");
+            options.put("name", "SPACEVIZ");
             options.put("description", "Reference No. #123456");
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg");
            // options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
-            options.put("theme.color", "#D014D6");
+            options.put("theme.color", "#9CDFF4");
             options.put("currency", "INR");
             options.put("amount", price2);//pass amount in currency subunits
             options.put("prefill.email", "kedarpandit2000@gmail.com");
