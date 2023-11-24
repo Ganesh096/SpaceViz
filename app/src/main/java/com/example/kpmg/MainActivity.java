@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getImages() {
 
-        imagesPath.add(R.drawable.kptable);
+        imagesPath.add(R.drawable.table);
         imagesPath.add(R.drawable.bookshelf);
         imagesPath.add(R.drawable.lamp);
         imagesPath.add(R.drawable.odltv);
@@ -108,18 +108,18 @@ public class MainActivity extends AppCompatActivity {
         imagesPath.add(R.drawable.longco);
         imagesPath.add(R.drawable.floppychair);
         imagesPath.add(R.drawable.garden);
-        namesPath.add("Table");
-        namesPath.add("BookShelf");
-        namesPath.add("Lamp");
-        namesPath.add("Old Tv");
-        namesPath.add("Desk");
-        namesPath.add("Wooden Chair");
-        namesPath.add("Bed");
-        namesPath.add("TVTable");
-        namesPath.add("Sofa");
-        namesPath.add("Fluffy Chair");
-        namesPath.add("Garden Bench");
-        modelNames.add("Desk.sfb");
+        namesPath.add("Table\n2999/-");
+        namesPath.add("BookShelf\n3299/-");
+        namesPath.add("Lamp\n1790/-");
+        namesPath.add("Old Tv\n6999/-");
+        namesPath.add("Desk\n3999/-");
+        namesPath.add("Chair\n1499");
+        namesPath.add("Bed\n19999/-");
+        namesPath.add("TVTable\n2499/-");
+        namesPath.add("Sofa\n14999/-");
+        namesPath.add("Fluffy Chair\n899/-");
+        namesPath.add("Garden Bench\n8999/-");
+        modelNames.add("table.sfb");
         modelNames.add("model.sfb");
         modelNames.add("lamp.sfb");
         modelNames.add("tv.sfb");
