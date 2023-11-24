@@ -267,7 +267,7 @@ public class PaymentActivity extends AppCompatActivity  implements PaymentResult
 
 
 
-            alertDialogBuilder.setMessage("Payment Successful \nPayment ID: "+s+"\n\nPayment Data: "+paymentData.getData()+"\n\nOrder id:"+id);
+            alertDialogBuilder.setMessage("Payment Successful \nPayment ID: "+s+"\n\nOrderId: "+id+"\n\nOrder Placed Successfully\n\nThank You...!\n ");
             alertDialogBuilder.show();
         }catch (Exception e){
             e.printStackTrace();
